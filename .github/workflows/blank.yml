@@ -15,7 +15,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   prod-check:
-     environment: learning   
+    environment: learning   
     if: ${{ github.ref == 'refs/heads/staging' }}
     runs-on: ubuntu-latest
     steps:
