@@ -18,5 +18,8 @@ jobs:
     environment: learning   
     if: ${{ github.ref == 'refs/heads/staging' }}
     runs-on: ubuntu-latest
+    - env:
+         TWINE_PASSWORD: ${{ secrets.staging }}
     steps:
-      - run: echo "Deploying to production server on branch ${staging}"
+      - run: echo "Deploying to production server on branch ${TWINE_PASSWORD}"
+      
