@@ -5,3 +5,7 @@ hello world 2
 //before stash
 
 will revert this line .....
+
+make a commt 
+
+make commit from test 2
